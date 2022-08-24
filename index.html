@@ -216,7 +216,7 @@
         //Flip Card
         function FlipCard()
         {
-            if (!IsCheking)
+            if (!IsCheking && this.getAttribute('src') == 'pics/blank.jpg')
             {
                 var CardID = this.getAttribute('data-cardNo');
                 CardsChoosen.push(CardsArray[CardID].name);
